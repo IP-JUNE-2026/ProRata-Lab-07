@@ -1,1 +1,41 @@
-Upload the answer here
+A)
+public class IT21802812Lab7Q2A {
+    public static void main(String[] args) {
+        for (int row = 1; row <= 4; row++) {
+            for (int col = 1; col <= 5; col++) {
+                System.out.print("$ ");
+            }
+            System.out.println();
+        }
+    }
+}  
+
+B)
+public class IT21802812Lab7Q2B {
+    public static void main(String[] args) {
+        for (int row = 1; row <= 5; row++) {
+            System.out.print(row + " - ");
+            for (int col = 1; col <= row; col++) {
+                if (col < row) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+C)
+public class IT21802812Lab7Q2C {
+    public static void main(String[] args) {
+        for (int row = 1; row <= 5; row++) {
+            int number = 6 - row;
+            for (int col = 1; col <= number; col++) {
+                System.out.print(number);
+            }
+            System.out.println();
+        }
+    }
+}
