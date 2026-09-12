@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+	public class IT22195616Lab7Q1A{
+		
+		public static void main (String[] args){
+			
+			Scanner input = new Scanner(System.in);
+			
+			double avarage , mark1 , mark2 , mark3 , mark4;
+			
+			System.out.println("Enter marks for four subjects : ");
+			
+			
+			System.out.print("Enter subject mark 1 : " );
+			mark1 = input.nextDouble();
+			
+			System.out.print("Enter subject mark 2 : " );
+			mark2 = input.nextDouble();
+			
+			System.out.print("Enter subject mark 3 : " );
+			mark3 = input.nextDouble();
+			
+			System.out.print("Enter subject mark 4 : " );
+			mark4 = input.nextDouble();
+			
+			avarage = (mark1+mark2+mark3+mark4)/ 4.0;
+			System.out.println("Avarage is :" + avarage);
+			
+			if (avarage >= 75 && avarage <= 100) {
+            System.out.println("Overall Grade is : Distinction");
+        	} 
+			
+        	else if (avarage >= 50) {
+            System.out.println("Overall Grade is : Credit");
+        	} 
+			
+        	else if (avarage >= 0) {
+            System.out.println("Overall Grade is : Fail");
+        	} 
+			
+        	else {
+            System.out.println("Invalid marks entered.");
+        	}	
+			
+			 input.close();
+			
+		
+			
+			
+			
+				
+		}
+
+}
