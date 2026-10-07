@@ -1,1 +1,21 @@
-Upload the answer here
+public class IT23158290Lab7Q2B {
+    public static void main(String[] args) {
+
+        int row = 1;
+
+        while (row <= 5) {
+
+            System.out.print(row + " - ");
+
+            int star = 1;
+
+            while (star <= row) {
+                System.out.print("* ");
+                star++;
+            }
+
+            System.out.println();
+            row++;
+        }
+    }
+}
