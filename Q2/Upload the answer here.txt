@@ -1,1 +1,10 @@
-Upload the answer here
+public class IT23172746Lab7Q2A {
+    public static void main(String[] args) {
+        for (int row = 1; row <= 2; row++) {
+            for (int col = 1; col <= 10; col++) {
+                System.out.print("$");
+            }
+            System.out.println();
+        }
+    }
+}
