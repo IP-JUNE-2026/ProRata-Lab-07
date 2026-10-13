@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class IT22913524Lab7Q1 {
+
+    static String getGrade(double average) {
+        if (average >= 75) {
+            return "Distinction";
+        } else if (average >= 50) {
+            return "Credit";
+        } else {
+            return "Fail";
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // ---------- Part (a): one student, marks on separate lines ----------
+        System.out.println("Enter marks for four subjects:");
+        double sum = 0;
+
+        for (int i = 1; i <= 4; i++) {
+            System.out.print("Enter Subject Mark " + i + ": ");
+            sum += sc.nextDouble();
+        }
+
+        double average = sum / 4;
+
+        System.out.println();
+        System.out.println("Average is : " + average);
+        System.out.println("Overall Grade is : " + getGrade(average));
+
+        // ---------- Part (b): three students, marks in a single line ----------
+        System.out.println();
+        System.out.println("---- Part (b) ----");
+
+        for (int student = 1; student <= 3; student++) {
+            System.out.println("Student " + student);
+            System.out.print("Enter marks: ");
+
+            double m1 = sc.nextDouble();
+            double m2 = sc.nextDouble();
+            double m3 = sc.nextDouble();
+            double m4 = sc.nextDouble();
+
+            double avg = (m1 + m2 + m3 + m4) / 4;
+
+            System.out.println("Average is : " + avg);
+            System.out.println("Overall Grade is : " + getGrade(avg));
+            System.out.println();
+        }
+    }
+}
